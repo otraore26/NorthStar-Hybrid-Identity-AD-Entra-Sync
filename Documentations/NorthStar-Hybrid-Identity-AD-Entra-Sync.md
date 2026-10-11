@@ -448,3 +448,33 @@ and confirm their on-premises synchronization status.
 
 **Screenshot:**
 <img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/06f6e22bcb3429141b8a5b43bc28c54aff8b99de/Screenshots/Step-18%20%20Synchronized%20Users%20in%20Microsoft%20Entra%20ID.png">
+
+
+### Step 19: Review Department Groups in Microsoft Entra ID
+
+I navigated to **Entra ID → Groups → All groups** in the
+Microsoft Entra admin center.
+
+The page displayed **13 groups found**, including the following
+department groups with the group type **Security**:
+
+- **Finance-Users**
+- **HR-Users**
+- **IT-Users**
+- **Operations-Users**
+
+This screenshot confirms that the department groups are present
+in Microsoft Entra ID. Their synchronization source and
+membership require verification in each group's properties.
+
+**Purpose:** Confirm that the expected department security
+groups are visible in the cloud directory.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/9f450089323c304e192ed58d1ca9b277b6c4dce6/Screenshots/Screenshot%202026-10-11%20010256.png">
+
+
+**Next step:** Open a department group's properties to verify
+its on-premises synchronization status, then compare its
+members with the corresponding Active Directory group.
