@@ -505,9 +505,6 @@ group type, and membership count in Microsoft Entra ID.
 
 <img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/7ef4767eac03cbe2ff8fa527cc6a5824beeb9aad/Screenshots/HR%20Users.png">
 
-**Next step:** Open **Members** and compare the four listed
-users with the membership of **HR-Users** in Active Directory
-to validate membership consistency.
 
 **Result:** The HR-Users group was verified in Microsoft Entra ID
 with **Windows Server AD** as its source and **four direct user
