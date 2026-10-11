@@ -335,4 +335,97 @@ to configure the on-premises forest for single sign-on.
 settings before installation.
 
 
+### Step 15: Review the Final Synchronization Configuration
 
+I proceeded to the **Ready to configure** page in the
+Microsoft Entra Connect Sync setup wizard.
+
+The configuration summary listed the following actions:
+
+- Configure the synchronization services.
+- Install the authentication agent and enable **Pass-through authentication**.
+- Enable **Single sign-on**.
+- Configure connectors for **NMGM.com** and **NMGM.onmicrosoft.com**.
+- Configure the **Source Anchor Attribute**.
+- Enable **Password hash synchronization**.
+- Enable **Password writeback** and **Group writeback**.
+- Enable the **Microsoft Entra ID Export Deletion Threshold (500)**.
+
+The final summary showed **Pass-through authentication** as the
+sign-in method, with **Password hash synchronization** also enabled.
+
+**Start the synchronization process when configuration completes**
+was checked. **Enable staging mode** was unchecked.
+
+**Purpose:** Review the selected settings before applying the
+configuration and starting synchronization.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/4ad7d020987762ff89578877ed9acda6c4fd6651/Screenshots/Step-15%20Review-ready-to-configure-settings.png">
+
+**Next step:** Click **Install** to apply the configuration,
+then review the completion status and any warnings.
+
+### Step 16: Confirm Configuration Completion
+
+The Microsoft Entra Connect Sync wizard displayed
+**Configuration complete**, confirming that configuration
+succeeded and the synchronization process had been initiated.
+
+The completion page also displayed the following information:
+
+- **Active Directory Recycle Bin:** Not enabled for **NMGM.com**;
+  enabling it was recommended.
+- **Trusted Platform Module (TPM):** Recommended to improve
+  the security of the synchronization server.
+- **Source anchor:** Configured to use **mS-DS-ConsistencyGuid**.
+- **Seamless SSO:** Additional configuration through
+  **Group Policy** was required for the user sign-in experience.
+
+This screenshot confirms successful configuration and the start
+of synchronization. Validation of synchronized identities is
+documented in the following steps.
+
+**Purpose:** Record the configuration result and identify
+follow-up configuration and validation tasks.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/4ad7d020987762ff89578877ed9acda6c4fd6651/Screenshots/Step-16%20Entra-connect-configuration-complete.png">
+
+**Next step:** Click **Exit**, open the Microsoft Entra admin
+center, and verify the synchronization status and test identities.
+
+
+### Step 17: Confirm Microsoft Entra Connect Is Enabled
+
+I opened the **Microsoft Entra admin center** and reviewed
+the tenant dashboard after completing the configuration.
+
+The **Tenant status** card displayed
+**Microsoft Entra Connect: Enabled** with a green check mark.
+
+The dashboard also showed the following tenant totals:
+
+- **16 users**
+- **13 groups**
+- **1 device**
+- **1 application**
+
+These totals represent objects in the tenant. They do not
+confirm that every object was synchronized from on-premises
+Active Directory.
+
+**Purpose:** Confirm that the tenant recognizes Microsoft
+Entra Connect as enabled following configuration.
+
+**Screenshot:**
+
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/4ad7d020987762ff89578877ed9acda6c4fd6651/Screenshots/Step-17%20Entra-dashboard-connect-enabled.png">
+![Microsoft Entra dashboard showing Microsoft Entra Connect enabled and tenant object totals](<images/Step-17 Entra-dashboard-connect-enabled.png>)
+
+**Next step:** Open **View Entra Connect** to review the latest
+synchronization status, then inspect test users and groups
+to verify their synchronization source and expected attributes
