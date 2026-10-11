@@ -143,3 +143,26 @@ to use when connecting to the on-premises forest for synchronization.
 
 **Next step:** Click **OK** to submit the credentials, then check
 that **NMGM.com** appears under **Configured directories**.
+
+### Step 7: Confirm the Active Directory Connection
+
+After submitting the AD forest account credentials, I returned
+to the **Connect your directories** page in the Microsoft Entra
+Connect Sync setup wizard.
+
+The **Configured directories** section displayed
+**NMGM.com (Active Directory)** with a green check mark,
+confirming that the directory had been successfully added.
+The **Next** button was now available.
+
+**Purpose:** Verify that the on-premises Active Directory forest
+was connected in the wizard before continuing configuration.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/9e64c712ceed168f9feca64f9ac48e30c069d8ea/Screenshots/Step-7%20ad-directory-connection-confirmed.png">
+
+
+**Next step:** Click **Next** to review the
+**Microsoft Entra sign-in configuration**, including the
+Active Directory UPN suffix and its matching Entra ID domain.
