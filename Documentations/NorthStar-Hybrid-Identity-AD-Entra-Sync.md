@@ -190,3 +190,27 @@ matches a verified domain in Microsoft Entra ID before proceeding.
 
 **Next step:** Review the domain mismatch and document how it
 was handled before continuing to **Domain and OU filtering**.
+
+
+### Step 9: Configure Domain and OU Filtering
+
+I proceeded to the **Domain and OU filtering** page in the
+Microsoft Entra Connect Sync setup wizard.
+
+With **NMGM.com** selected as the directory, I selected
+**Sync all domains and OUs**. This included all domains and
+organizational units in the connected forest at this filtering stage,
+rather than limiting synchronization to specific OUs.
+
+**Purpose:** Define the domain and organizational unit scope
+for directory synchronization in the lab.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/d3bf6488bc85344336fd3da87465e3771fd67294/Screenshots/Step-9%20%20Select-sync-all-domains-and-ous.png">
+
+
+![Sync all domains and OUs selected for NMGM.com](<images/Step-9  Select-sync-all-domains-and-ous.png>)
+
+**Next step:** Click **Next** to configure how users are uniquely
+identified across the on-premises directory and Microsoft Entra ID.
