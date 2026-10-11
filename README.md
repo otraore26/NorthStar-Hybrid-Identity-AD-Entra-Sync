@@ -1,7 +1,7 @@
 ## NorthStar Medical Group: Hybrid Identity Synchronization
-Project status: Planned / In progress
-Scenario: Fictional healthcare organization
-Purpose: Hands-on IAM lab connecting on-premises Active Directory with Microsoft Entra ID
+ ## Project status: Completed 
+## Scenario: Fictional healthcare organization
+## Purpose: Hands-on IAM lab connecting on-premises Active Directory with Microsoft Entra ID
 
  
 ## Project Overview
