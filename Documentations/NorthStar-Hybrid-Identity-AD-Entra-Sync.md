@@ -543,11 +543,9 @@ Detailed membership comparisons, attribute matching, sign-in,
 and writeback testing are outside the validation evidence included here.
 
 ## Conclusion
+I completed the hybrid identity synchronization lab within the documented scope. Microsoft Entra Connect Sync connected the on-premises directory to Entra ID, where I verified synchronized test users and the HR-Users group's Windows Server AD source.
+The project demonstrates hands-on configuration, log-based troubleshooting, and evidence-based validation. It provides a foundation for a separate identity lifecycle project.
 
-The hybrid identity synchronization lab is complete within the
-documented scope. The environment provides a foundation for
-managing employee identities across on-premises Active Directory
-and Microsoft Entra ID.
 
 ## Next Project: Joiner-Mover-Leaver Identity Lifecycle
 
@@ -579,3 +577,12 @@ when an employee's role or employment status changes.
 
 **Status:** Planned — this work will be documented as a separate
 project with its own scenarios, screenshots, and validation results.
+
+## Previous Project: Basic Employee Onboarding and AD RBAC
+
+This hybrid identity lab builds on my previous project, where
+I prepared the NorthStar Medical Group Active Directory environment,
+created employee accounts, organized departmental OUs, and configured
+security groups for role-based access control.
+
+[View the Basic Employee Onboarding and AD RBAC project](https://github.com/otraore26/Basic-Employee-Onboarding-AD-RBAC-)
