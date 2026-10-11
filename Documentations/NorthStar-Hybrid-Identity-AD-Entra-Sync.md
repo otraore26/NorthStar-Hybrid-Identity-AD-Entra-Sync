@@ -329,8 +329,10 @@ to configure the on-premises forest for single sign-on.
 
 **Screenshot:**
 
-<img width="1000" alt="image" src="Screenshots/Step-14  single-sign-on-credentials-accepted.png">
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/dda4e1de0d244fc145d308e7fc14530e352a7c5c/Screenshots/Step-14%20%20single-sign-on-credentials-accepted.png">
 
 **Next step:** Click **Next** to review the final configuration
 settings before installation.
+
+
 
