@@ -284,3 +284,31 @@ features to include in the lab configuration.
 
 **Next step:** Click **Next** to review the **Group Writeback**
 configuration and any related warnings.
+
+
+### Step 13: Review the Group Writeback Configuration and Warning
+
+I proceeded to the **Group Writeback** page in the
+Microsoft Entra Connect Sync setup wizard.
+
+The **Group writeback forest** was set to **NMGM.com**.
+The page displayed the available on-premises containers and
+organizational units for the group writeback destination.
+
+A warning stated that **NMGM.com did not have the Active Directory
+schema for Exchange**. According to the warning, mail and Exchange
+attributes would not be written back, limiting integration with
+on-premises Exchange hybrid.
+
+No destination was visibly selected, and the **Next** button
+was disabled at this stage.
+
+**Purpose:** Review the group writeback destination and identify
+configuration limitations before continuing.
+
+**Screenshot:**
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/ace733280a2e09253a28d9a4a9048193eed2b883/Screenshots/Step-13%20%20group-writeback-exchange-schema-warning.png">
+
+**Next step:** Review the warning, confirm the intended group
+writeback destination, and document the configuration decision
+before proceeding.
