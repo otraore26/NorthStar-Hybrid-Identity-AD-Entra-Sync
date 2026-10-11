@@ -210,7 +210,7 @@ for directory synchronization in the lab.
 <img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/d3bf6488bc85344336fd3da87465e3771fd67294/Screenshots/Step-9%20%20Select-sync-all-domains-and-ous.png">
 
 
-![Sync all domains and OUs selected for NMGM.com](<images/Step-9  Select-sync-all-domains-and-ous.png>)
+
 
 **Next step:** Click **Next** to configure how users are uniquely
 identified across the on-premises directory and Microsoft Entra ID.
