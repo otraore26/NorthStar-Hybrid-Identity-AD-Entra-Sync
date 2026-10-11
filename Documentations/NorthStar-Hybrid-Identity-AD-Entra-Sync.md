@@ -35,6 +35,8 @@ This screenshot documents the starting state of the lab before
 configuring synchronization between on-premises Active Directory
 and Microsoft Entra ID.
 
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/cfc5dbcf-3fcb-4a71-9c13-2a49f8bab3e6">
 ![Initial Microsoft Entra Connect status](../images/step-01-entra-status.png)
 
 **Next step:** Obtain and install Microsoft Entra Connect Sync,
