@@ -1,3 +1,5 @@
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/f82bc5aae5b2283e72273ccd05fd301b97f94800/Screenshots/Hybrid%20identity%20lab%20documentation%20banner.png">
+
 ## Implementation Documentation
 
 This documentation presents the step-by-step implementation of my
