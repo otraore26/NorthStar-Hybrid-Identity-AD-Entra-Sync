@@ -478,3 +478,33 @@ groups are visible in the cloud directory.
 **Next step:** Open a department group's properties to verify
 its on-premises synchronization status, then compare its
 members with the corresponding Active Directory group.
+
+
+### Step 20: Verify the HR-Users Group Synchronization Source
+
+I opened **Groups → All groups → HR-Users** in the
+Microsoft Entra admin center and reviewed the **Overview** page.
+
+The group displayed the following details:
+
+- **Source:** Windows Server AD
+- **Type:** Security
+- **Membership type:** Assigned
+- **Total direct members:** 4
+- **Users:** 4
+- **Groups and devices:** 0
+
+The **Windows Server AD** source confirms that **HR-Users**
+is synchronized from the on-premises directory. The overview
+also confirms that the cloud group contains four user members.
+
+**Purpose:** Verify the HR group's on-premises origin,
+group type, and membership count in Microsoft Entra ID.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/7ef4767eac03cbe2ff8fa527cc6a5824beeb9aad/Screenshots/HR%20Users.png">
+
+**Next step:** Open **Members** and compare the four listed
+users with the membership of **HR-Users** in Active Directory
+to validate membership consistency.
