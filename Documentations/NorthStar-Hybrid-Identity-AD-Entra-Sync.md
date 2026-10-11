@@ -166,3 +166,27 @@ was connected in the wizard before continuing configuration.
 **Next step:** Click **Next** to review the
 **Microsoft Entra sign-in configuration**, including the
 Active Directory UPN suffix and its matching Entra ID domain.
+
+### Step 8: Review the UPN Suffix and Entra ID Domain Status
+
+I proceeded to the **Microsoft Entra sign-in configuration** page
+in the Microsoft Entra Connect Sync setup wizard.
+
+The Active Directory UPN suffix **nmgm.com** displayed
+**Not Added** under Microsoft Entra ID Domain. The selected
+username attribute was **userPrincipalName**.
+
+The wizard displayed a warning about sign-in when the UPN suffix
+does not match a verified domain. The option to continue without
+matching all UPN suffixes was unchecked, and **Next** was disabled.
+
+**Purpose:** Check whether the on-premises user sign-in suffix
+matches a verified domain in Microsoft Entra ID before proceeding.
+
+**Screenshot:**
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/b819ff611377ec2ba87b1488cdada63e150b0511/Screenshots/Step-8%20%20upn-suffix-domain-not-added.png">
+
+
+
+**Next step:** Review the domain mismatch and document how it
+was handled before continuing to **Domain and OU filtering**.
