@@ -424,8 +424,27 @@ Entra Connect as enabled following configuration.
 
 
 <img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/4ad7d020987762ff89578877ed9acda6c4fd6651/Screenshots/Step-17%20Entra-dashboard-connect-enabled.png">
-![Microsoft Entra dashboard showing Microsoft Entra Connect enabled and tenant object totals](<images/Step-17 Entra-dashboard-connect-enabled.png>)
+
 
 **Next step:** Open **View Entra Connect** to review the latest
 synchronization status, then inspect test users and groups
 to verify their synchronization source and expected attributes
+
+### Step 18: Verify Synchronized Users in Microsoft Entra ID
+
+I navigated to **Entra ID → Users → All users** in the
+Microsoft Entra admin center.
+
+The page displayed **16 users found**. Visible test accounts,
+including **James Whitfield**, **Jane Cooper**, and **Karen Mills**,
+showed **Yes** in the **On-premises sync enabled** column,
+confirming their synchronization from on-premises Active Directory.
+
+My **Ousmane Traore** account showed **No** in the same column,
+distinguishing it from the synchronized test accounts.
+
+**Purpose:** Verify that test users appear in Microsoft Entra ID
+and confirm their on-premises synchronization status.
+
+**Screenshot:**
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/06f6e22bcb3429141b8a5b43bc28c54aff8b99de/Screenshots/Step-18%20%20Synchronized%20Users%20in%20Microsoft%20Entra%20ID.png">
