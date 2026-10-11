@@ -312,3 +312,25 @@ configuration limitations before continuing.
 **Next step:** Review the warning, confirm the intended group
 writeback destination, and document the configuration decision
 before proceeding.
+### Step 14: Provide Credentials for Single Sign-On
+
+I proceeded to the **Enable single sign-on** page in the
+Microsoft Entra Connect Sync setup wizard.
+
+I provided domain administrator credentials for the **NMGM.com**
+forest using **Enter credentials**.
+
+A green check mark appeared beside the button, indicating that
+the credentials were accepted. The **Next** button was enabled,
+allowing me to continue.
+
+**Purpose:** Provide the credentials required for the wizard
+to configure the on-premises forest for single sign-on.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="Screenshots/Step-14  single-sign-on-credentials-accepted.png">
+
+**Next step:** Click **Next** to review the final configuration
+settings before installation.
+
