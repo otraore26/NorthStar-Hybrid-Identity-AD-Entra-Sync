@@ -118,7 +118,7 @@ to connect to Microsoft Entra ID for synchronization.
 
 **Screenshot:**
 
-![Selecting the NMGM.com Active Directory forest](<images/Step-5 select-ad-forest-nmgm.png>)
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/b6aefd54bae91b185bcf7656700b1573ab7f30fc/Screenshots/Step-5%20select-ad-forest-nmgm.png">
 
 **Next step:** Click **Add Directory** and provide the required
 AD forest account information to configure the directory connection.
