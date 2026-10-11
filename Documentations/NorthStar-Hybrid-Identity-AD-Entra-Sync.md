@@ -122,3 +122,24 @@ to connect to Microsoft Entra ID for synchronization.
 
 **Next step:** Click **Add Directory** and provide the required
 AD forest account information to configure the directory connection.
+
+
+### Step 6: Enter the Existing AD Forest Account
+
+In the **AD forest account** dialog, I selected
+**Use existing AD account** and entered the credentials for
+the lab account **NMGM\Administrator**.
+
+The password was masked. At this stage, the credentials had
+been entered but the directory connection was not yet confirmed.
+
+**Purpose:** Provide an Active Directory account for the wizard
+to use when connecting to the on-premises forest for synchronization.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/8b4a721710ce3b0ecd06accaa2640c705814222d/Screenshots/Step-6%20Enter-existing-ad-forest-account.png">
+
+
+**Next step:** Click **OK** to submit the credentials, then check
+that **NMGM.com** appears under **Configured directories**.
