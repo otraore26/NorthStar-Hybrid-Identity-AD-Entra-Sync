@@ -214,3 +214,73 @@ for directory synchronization in the lab.
 
 **Next step:** Click **Next** to configure how users are uniquely
 identified across the on-premises directory and Microsoft Entra ID.
+
+
+### Step 10: Configure User Identification and the Source Anchor
+
+I proceeded to the **Uniquely identifying your users** page
+in the Microsoft Entra Connect Sync setup wizard.
+
+I selected **Users are represented only once across all directories**
+and **Let Azure manage the source anchor**, rather than manually
+choosing a specific attribute.
+
+**Purpose:** Define how users are identified and how their
+on-premises identities are linked to corresponding identities
+in Microsoft Entra ID.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/1f9faa4a6e5dbe5c215ee3c899f7be44c7e22821/Screenshots/Step-10%20%20User-identification-and-source-anchor.png">
+
+
+
+**Next step:** Click **Next** to review the
+**Filter users and devices** settings.
+
+
+### Step 11: Configure User and Device Filtering
+
+I proceeded to the **Filter users and devices** page in the
+Microsoft Entra Connect Sync setup wizard.
+
+I selected **Synchronize all users and devices** for the
+**NMGM.com** forest. No group was specified for filtering,
+so synchronization was not restricted to a selected pilot group.
+
+**Purpose:** Include all eligible users and devices within the
+previously configured directory scope, subject to synchronization rules.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/1f9faa4a6e5dbe5c215ee3c899f7be44c7e22821/Screenshots/Step-11%20%20select-sync-all-users-and-devices.png">
+
+
+**Next step:** Click **Next** to review and select the
+**Optional features** for the lab.
+
+
+### Step 12: Select Optional Synchronization Features
+
+I proceeded to the **Optional features** page in the
+Microsoft Entra Connect Sync setup wizard.
+
+The following options were selected:
+
+- **Password hash synchronization**
+- **Password writeback**
+- **Group writeback**
+
+A warning icon appeared beside **Group writeback**, requiring
+further review. This screenshot records the selected options
+before configuration; it does not confirm successful operation.
+
+**Purpose:** Specify the additional synchronization and writeback
+features to include in the lab configuration.
+
+**Screenshot:**
+
+<img width="1000" alt="image" src="https://github.com/otraore26/NorthStar-Hybrid-Identity-AD-Entra-Sync/blob/1f9faa4a6e5dbe5c215ee3c899f7be44c7e22821/Screenshots/Step-12%20Optional-password-sync-and-writeback-settings.png">
+
+**Next step:** Click **Next** to review the **Group Writeback**
+configuration and any related warnings.
