@@ -508,3 +508,77 @@ group type, and membership count in Microsoft Entra ID.
 **Next step:** Open **Members** and compare the four listed
 users with the membership of **HR-Users** in Active Directory
 to validate membership consistency.
+
+**Result:** The HR-Users group was verified in Microsoft Entra ID
+with **Windows Server AD** as its source and **four direct user
+members**. This confirms the group's on-premises origin and
+its presence in the cloud directory.
+
+## Project Summary
+
+I successfully configured Microsoft Entra Connect Sync for the
+fictional NorthStar Medical Group lab, connecting on-premises
+Active Directory with Microsoft Entra ID.
+
+The documented results confirm:
+
+- Successful completion of Microsoft Entra Connect Sync configuration.
+- Microsoft Entra Connect displayed as **Enabled** in the tenant.
+- Test users displayed with **On-premises sync enabled: Yes**.
+- Department security groups appeared in Microsoft Entra ID.
+- HR-Users displayed **Windows Server AD** as its source.
+
+## Lessons Learned
+During the implementation of Microsoft Entra Connect Sync, I encountered an application-based authentication failure. Reviewing the setup logs revealed AADSTS700027, which pointed to a certificate validity issue.
+
+Further investigation identified a three-hour clock discrepancy on the Windows Server VM, which was using the Local CMOS Clock. This caused the certificate’s validity period to begin in the future, preventing authentication.
+
+I corrected the issue by configuring Windows Time to synchronize with time.windows.com, restarting the service, and forcing a resynchronization. I then verified the synchronization source and confirmed that the server’s UTC time was accurate.
+
+This experience reinforced the importance of validating time synchronization before deploying hybrid identity services and using detailed logs to identify the root cause of authentication failures.
+
+
+## Scope of Validation
+
+This documentation verifies configuration completion, synchronized
+test users, and the HR-Users group's source and membership count.
+Detailed membership comparisons, attribute matching, sign-in,
+and writeback testing are outside the validation evidence included here.
+
+## Conclusion
+
+The hybrid identity synchronization lab is complete within the
+documented scope. The environment provides a foundation for
+managing employee identities across on-premises Active Directory
+and Microsoft Entra ID.
+
+## Next Project: Joiner-Mover-Leaver Identity Lifecycle
+
+My next project will build on this hybrid identity environment
+to manage employee onboarding, department changes, and offboarding
+for the fictional NorthStar Medical Group.
+
+### Planned Scenarios
+
+- **Joiner:** Create a new employee account in Active Directory,
+  assign appropriate department groups, and verify synchronization
+  to Microsoft Entra ID.
+- **Mover:** Update an employee's department and group memberships,
+  remove previous access, and verify the changes in Entra ID.
+- **Leaver:** Disable the employee account, remove access,
+  revoke active cloud sessions, and verify the offboarding results.
+
+### Planned Security Controls
+
+- Multifactor authentication (MFA).
+- Conditional Access policies.
+- Role-based access and least privilege.
+- Access reviews to identify unnecessary permissions.
+- Audit logs to track identity and access changes.
+
+**Goal:** Demonstrate how identity lifecycle processes provide
+appropriate access and ensure that access is updated or revoked
+when an employee's role or employment status changes.
+
+**Status:** Planned — this work will be documented as a separate
+project with its own scenarios, screenshots, and validation results.
